@@ -4,9 +4,8 @@ title: Home
 ---
 
 What happens when AI stops being a tool and starts being a colleague?
-I am a technologist who likes to think beyond the technology – here I write
-about AI and agentic systems and what they mean for organisations and the
-people who work in them.
+I am a technologist, and I write about AI and agentic systems and what they
+mean for organisations and the people who work in them.
 
 ## Series
 
