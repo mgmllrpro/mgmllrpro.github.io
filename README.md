@@ -1,7 +1,8 @@
-# Thinking Ahead
+# Beyond the Technology
 
-Articles by Michael, a technologist thinking beyond the technology: what AI and
-agentic systems mean for organisations and the people who work in them.
+What happens when AI stops being a tool and starts being a colleague?
+Articles on AI and agentic systems and what they mean for organisations and
+the people who work in them.
 Read them on the website: **https://mgmllrpro.github.io**
 
 Views are my own and do not necessarily reflect those of my employer.
