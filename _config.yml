@@ -24,7 +24,7 @@ lang: en
 # Social links shown in the footer (leave empty to hide)
 minima:
   social_links:
-    linkedin: ""        # your LinkedIn handle, e.g. "michael-example"
+    linkedin: "michaelgmueller"        # your LinkedIn handle, e.g. "michael-example"
     github: "mgmllrpro"
 
 # ------------------------------------------------------------
