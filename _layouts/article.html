@@ -27,7 +27,7 @@ layout: default
     {%- endif %}
     <h1 class="post-title">{{ page.title | escape }}</h1>
     {%- if page.date %}
-    <p class="post-meta">{{ page.date | date: "%-d %B %Y" }}{% if site.author.name %} · {{ site.author.name | escape }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%-d %B %Y" }}{% if site.author %} · {{ site.author | escape }}{% endif %}</p>
     {%- endif %}
   </header>
 
