@@ -48,6 +48,18 @@ Views are my own and do not necessarily reflect those of my employer.
 3. Add `header.png` (1200 × 627 px works best for LinkedIn).
 4. Commit. The series page, the start page and the navigation update automatically.
 
+## Writing tips
+
+Highlight a key idea with the light bulb box – write a quote and add the class
+directly below it:
+
+```markdown
+> Agents don't replace the operating model – they force us to make it explicit.
+{: .key-idea}
+```
+
+Use it at most once or twice per article so it keeps its effect.
+
 ## Starting a new series
 
 1. Set `visible: true` for the series in `_data/series.yml` (or add a new entry).

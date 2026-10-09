@@ -4,9 +4,10 @@
 {%- endcomment -%}
 {%- assign articles = site.pages | where: "series", include.series | where: "layout", "article" | sort: "part" -%}
 {%- if articles.size > 0 -%}
-<ol class="article-list">
-  {%- for article in articles -%}
+<ul class="article-list">
+  {%- for article in articles %}
   <li>
+    {%- if article.part %}<span class="article-part">{{ article.part }}</span>{% endif -%}
     <a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a>
     {%- if article.date %}
     <span class="article-meta">{{ article.date | date: "%-d %B %Y" }}</span>
@@ -15,8 +16,8 @@
     <p>{{ article.description | escape }}</p>
     {%- endif %}
   </li>
-  {%- endfor -%}
-</ol>
+  {%- endfor %}
+</ul>
 {%- else -%}
-<p><em>The first article of this series is coming soon.</em></p>
+<p class="empty-note">The first article of this series is coming soon.</p>
 {%- endif -%}

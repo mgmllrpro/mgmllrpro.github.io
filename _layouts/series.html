@@ -4,6 +4,7 @@ layout: default
 {%- assign series = site.data.series | where: "id", page.series | first -%}
 <article class="post">
   <header class="post-header">
+    <p class="article-series"><a href="{{ "/" | relative_url }}">Series</a></p>
     <h1 class="post-title">{{ series.title | default: page.title | escape }}</h1>
     {%- if series.description %}
     <p class="series-description">{{ series.description | escape }}</p>
@@ -12,8 +13,8 @@ layout: default
 
   <div class="post-content">
     {{ content }}
-
-    <h2>Articles</h2>
-    {% include article-list.html series=page.series %}
   </div>
+
+  <h2 class="section-label section-label-spaced">Articles</h2>
+  {% include article-list.html series=page.series %}
 </article>
