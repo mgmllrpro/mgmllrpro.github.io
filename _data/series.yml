@@ -1,0 +1,23 @@
+# One entry per article series.
+# visible: true  -> the series appears on the start page
+# visible: false -> prepared, but not yet shown
+#
+# The id must match the folder name and the "series" value
+# in the front matter of every article of that series.
+
+- id: agentic-operating-model
+  title: "Agentic Operating Model"
+  description: >-
+    How financial services organisations evolve from a human operating model
+    to one where AI agents work integrated with people – across capability and
+    value, work and collaboration, knowledge, governance and operations,
+    technology, and workforce and change.
+  url: /agentic-operating-model/
+  visible: true
+
+- id: cyber-resilience
+  title: "Cyber Resilience"
+  description: >-
+    Cyber resilience for financial institutions in a time of AI-driven threats.
+  url: /cyber-resilience/
+  visible: false

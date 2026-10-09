@@ -1,0 +1,51 @@
+# ------------------------------------------------------------
+# Site settings
+# Username: mgmllrpro. Fill in your LinkedIn handle below.
+# ------------------------------------------------------------
+title: "Michael – Thinking Ahead"
+author:
+  name: "Michael"
+description: >-
+  What happens when AI stops being a tool and starts being a colleague?
+  Thoughts on AI and agentic systems and what they mean for organisations
+  and the people who work in them. Views are my own.
+
+url: "https://mgmllrpro.github.io"
+baseurl: ""
+lang: en
+
+# Default image for link previews (LinkedIn) on pages without their own image.
+# Put the file into assets/images/ first, then remove the # in front of the
+# three "defaults" lines below.
+# defaults:
+#   - scope: { path: "" }
+#     values: { image: /assets/images/default-preview.png }
+
+# Social links shown in the footer (leave empty to hide)
+minima:
+  social_links:
+    linkedin: ""        # your LinkedIn handle, e.g. "michael-example"
+    github: "mgmllrpro"
+
+# ------------------------------------------------------------
+# Theme and plugins (all supported by GitHub Pages)
+# ------------------------------------------------------------
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Pages shown in the top navigation, in this order
+header_pages:
+  - agentic-operating-model/index.md
+  - about.md
+
+# Files that live in the repository but are not part of the website
+exclude:
+  - README.md
+  - LICENSE

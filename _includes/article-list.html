@@ -1,0 +1,22 @@
+{%- comment -%}
+  Lists all published articles of one series, ordered by part.
+  Usage: {% include article-list.html series="agentic-operating-model" %}
+{%- endcomment -%}
+{%- assign articles = site.pages | where: "series", include.series | where: "layout", "article" | sort: "part" -%}
+{%- if articles.size > 0 -%}
+<ol class="article-list">
+  {%- for article in articles -%}
+  <li>
+    <a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a>
+    {%- if article.date %}
+    <span class="article-meta">{{ article.date | date: "%-d %B %Y" }}</span>
+    {%- endif %}
+    {%- if article.description %}
+    <p>{{ article.description | escape }}</p>
+    {%- endif %}
+  </li>
+  {%- endfor -%}
+</ol>
+{%- else -%}
+<p><em>The first article of this series is coming soon.</em></p>
+{%- endif -%}

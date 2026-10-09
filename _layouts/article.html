@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{%- assign series = site.data.series | where: "id", page.series | first -%}
+{%- assign articles = site.pages | where: "series", page.series | where: "layout", "article" | sort: "part" -%}
+{%- assign prev_article = nil -%}
+{%- assign next_article = nil -%}
+{%- for article in articles -%}
+  {%- if article.url == page.url -%}
+    {%- assign i = forloop.index0 -%}
+    {%- if i > 0 -%}
+      {%- assign p = i | minus: 1 -%}
+      {%- assign prev_article = articles[p] -%}
+    {%- endif -%}
+    {%- assign n = i | plus: 1 -%}
+    {%- if n < articles.size -%}
+      {%- assign next_article = articles[n] -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+<article class="post">
+  <header class="post-header">
+    {%- if series %}
+    <p class="article-series">
+      <a href="{{ series.url | relative_url }}">{{ series.title | escape }}</a>{% if page.part %} · Part {{ page.part }}{% endif %}
+    </p>
+    {%- endif %}
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {%- if page.date %}
+    <p class="post-meta">{{ page.date | date: "%-d %B %Y" }}{% if site.author.name %} · {{ site.author.name | escape }}{% endif %}</p>
+    {%- endif %}
+  </header>
+
+  {%- if page.image %}
+  <img class="article-header-image" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+  {%- endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {%- if prev_article or next_article %}
+  <nav class="article-nav">
+    {%- if prev_article %}
+    <a class="article-nav-prev" href="{{ prev_article.url | relative_url }}">← {{ prev_article.title | escape }}</a>
+    {%- endif %}
+    {%- if next_article %}
+    <a class="article-nav-next" href="{{ next_article.url | relative_url }}">{{ next_article.title | escape }} →</a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+
+  <p class="article-disclaimer"><em>Views are my own and do not necessarily reflect those of my employer.</em></p>
+</article>
