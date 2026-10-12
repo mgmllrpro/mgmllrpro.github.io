@@ -3,8 +3,9 @@ layout: series
 title: Agentic Operating Model
 series: agentic-operating-model
 description: >-
-  An article series on how financial services organisations evolve from a human
-  operating model to one where AI agents work integrated with people.
+  An article series on how organisations move from a human-only operating model
+  to one in which people, agents, automation and systems share the work. The
+  examples come from financial services, where the model is tested hardest.
 ---
 
 The Agentic Operating Model describes what changes when AI agents become part of

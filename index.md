@@ -4,7 +4,7 @@ title: Home
 ---
 <section class="hero">
   <div class="wrapper">
-    <h1 class="hero-question">What happens when AI stops being a tool and starts being a <span class="chalk-underline">colleague</span>?</h1>
+    <h1 class="hero-question">What happens when AI stops being a tool and starts <span class="chalk-underline">doing the work</span>?</h1>
     <p class="hero-intro">I am a technologist, and I write about AI and agentic systems and what they mean for organisations and the people who work in them.</p>
   </div>
 </section>
