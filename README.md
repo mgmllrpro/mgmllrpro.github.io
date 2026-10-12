@@ -1,6 +1,6 @@
 # Beyond the Technology
 
-What happens when AI stops being a tool and starts being a colleague?
+What happens when AI stops being a tool and starts doing the work?
 Articles on AI and agentic systems and what they mean for organisations and
 the people who work in them.
 Read them on the website: **https://mgmllrpro.github.io**
