@@ -10,10 +10,15 @@ work is shaped and what it means for the people doing it.
 
 ## How I write
 
-The ideas, models and conclusions in these articles are my own. I use AI as a
-writing partner – to structure thoughts, challenge arguments and refine
-language. Every article is reviewed and edited by me, and I take full
-responsibility for its content.
+For years, I had these ideas in my head and on whiteboards, but rarely on
+paper. I'm a technologist, and writing well in English never came easily to me.
+With AI as an editor, that has changed: I can focus on the content – the
+thinking, the structure, the arguments – and still end up with text I am happy
+to share. For me, that is one of the most practical things AI has done so far.
+
+The ideas, models and conclusions in these articles are my own. AI helps me put
+them into words and challenges my arguments along the way. Every article is
+reviewed and edited by me, and I take full responsibility for its content.
 
 ## About this site
 
