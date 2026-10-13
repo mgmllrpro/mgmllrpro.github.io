@@ -305,6 +305,24 @@ img
   font-size: 0.82rem;
 }
 
+/* Small chalk scribble next to a light-hearted paragraph: ![alt](file.png){: .scribble} */
+.post-content img.scribble
+{
+  float: right;
+  width: 132px;
+  height: auto;
+  margin: 4px 0 12px 20px;
+}
+
+@media (max-width: 600px)
+{
+  .post-content img.scribble
+  {
+    width: 96px;
+    margin-left: 14px;
+  }
+}
+
 .preview-note
 {
   margin: 40px 0 0;
