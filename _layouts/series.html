@@ -11,10 +11,17 @@ layout: default
     {%- endif %}
   </header>
 
+  {% include tldr.html items=page.tldr meta=page.tldr_meta %}
+
   <div class="post-content">
     {{ content }}
   </div>
 
+  {%- if series.parts %}
+  <h2 class="section-label section-label-spaced">Contents</h2>
+  {% include series-toc.html series=series %}
+  {%- else %}
   <h2 class="section-label section-label-spaced">Articles</h2>
   {% include article-list.html series=page.series %}
+  {%- endif %}
 </article>

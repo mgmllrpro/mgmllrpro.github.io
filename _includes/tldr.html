@@ -1,0 +1,21 @@
+{%- comment -%}
+  TL;DR box at the top of every article and series page.
+  Usage: {% include tldr.html items=page.tldr meta="5 min read" %}
+  items: list of short statements from the front matter (Markdown allowed, e.g. *emphasis*)
+  meta:  optional line below the list, e.g. the reading time
+  variant: "light" for a light card (articles, where the chalkboard header image follows);
+           without it the box is a dark chalkboard (series pages)
+{%- endcomment -%}
+{%- if include.items and include.items.size > 0 -%}
+<aside class="tldr{% if include.variant == "light" %} tldr--light{% endif %}" aria-label="TL;DR – the short version">
+  <p class="tldr-label">TL;DR</p>
+  <ul class="tldr-list">
+    {%- for item in include.items %}
+    <li>{{ item | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
+    {%- endfor %}
+  </ul>
+  {%- if include.meta %}
+  <p class="tldr-meta">{{ include.meta }}</p>
+  {%- endif %}
+</aside>
+{%- endif -%}
