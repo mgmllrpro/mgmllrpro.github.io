@@ -20,6 +20,16 @@ I cannot explain yet. Then I think it through in a structured way, and that
 becomes an article too. My aim is to offer a structured view that helps others
 find their own.
 
+## Basics are not always basic
+
+We often assume that the basics are clear, so we no longer define them. I have
+learned to be careful with that: even basics can mean different things to
+different people. Working across countries, I noticed it with something very
+simple – an address. It always describes a place, yet the way it is written
+differs from culture to culture. Since then, I watch what I take for granted
+and what I should define more clearly: in conversations, in my articles, and
+when I work with AI.
+
 ## How I write
 
 My native language is German, and that is the language I think and work in:
