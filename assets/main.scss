@@ -305,6 +305,27 @@ img
   font-size: 0.82rem;
 }
 
+.preview-note
+{
+  margin: 40px 0 0;
+  padding: 20px 24px;
+  border: 1px dashed var(--muted);
+  border-radius: 10px;
+  color: var(--ink-soft);
+}
+
+.preview-note p
+{
+  margin: 0;
+}
+
+.preview-note .preview-note-title
+{
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .section-label-spaced
 {
   margin-top: 48px;
