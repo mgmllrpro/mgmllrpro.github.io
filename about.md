@@ -11,10 +11,13 @@ work is shaped and what it means for the people doing it.
 ## How I write
 
 For years, I had these ideas in my head and on whiteboards, but rarely on
-paper. I'm a technologist, and writing well in English never came easily to me.
-With AI as an editor, that has changed: I can focus on the content – the
-thinking, the structure, the arguments – and still end up with text I am happy
-to share. For me, that is one of the most practical things AI has done so far.
+paper. I'm a technologist, and my native language is German. In IT, though,
+most of the conversation happens in English, so English is how ideas travel
+furthest. With AI as an editor, I can write in English: I focus on the content –
+the thinking, the structure, the arguments – and AI helps me find correct, clear
+English for it. That way my thoughts reach far more people than they would in
+German alone. For me, that is one of the most practical things AI has done so
+far.
 
 The ideas, models and conclusions in these articles are my own. AI helps me put
 them into words and challenges my arguments along the way. Every article is
