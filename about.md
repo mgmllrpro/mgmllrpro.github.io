@@ -8,6 +8,18 @@ I am Michael, a technologist. I write about AI and agentic systems and try
 to think beyond the technology itself – what changes for organisations, how
 work is shaped and what it means for the people doing it.
 
+## Where my topics come from
+
+Most of my articles start with a question I keep being asked. When similar
+questions come up again and again, I take it as a sign that the answer is worth
+structuring once – and sharing. Not everything I write is new. Often it is
+something I take for granted, until I notice that others do not.
+
+And sometimes, in those recurring discussions, I notice a gap myself: something
+I cannot explain yet. Then I think it through in a structured way, and that
+becomes an article too. My aim is to offer a structured view that helps others
+find their own.
+
 ## How I write
 
 My native language is German, and that is the language I think and work in:
