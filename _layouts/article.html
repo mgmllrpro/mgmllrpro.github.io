@@ -35,7 +35,7 @@ layout: default
     {%- endif %}
   </header>
 
-  {% include tldr.html items=page.tldr meta=read_meta %}
+  {% include tldr.html items=page.tldr meta=read_meta variant="light" %}
 
   {%- if page.image %}
   <img class="article-header-image" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">

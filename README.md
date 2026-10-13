@@ -58,8 +58,9 @@ Views are my own and do not necessarily reflect those of my employer.
 ## Writing tips
 
 Every article starts with a **TL;DR**: three statements in the front matter (`tldr:`). The
-layout shows them as a small chalkboard above the header image, together with the reading
-time (about 230 words per minute). Series pages have their own `tldr:` and `tldr_meta:`.
+layout shows them as a light card with a chalk accent above the header image, together with
+the reading time (about 230 words per minute). Series pages have their own `tldr:` and
+`tldr_meta:` and show the box as a dark chalkboard.
 
 
 Highlight a key idea with the light bulb box – write a quote and add the class
