@@ -291,6 +291,20 @@ img
   font-weight: 600;
 }
 
+.series-card.is-upcoming:hover
+{
+  border-color: var(--line);
+  transform: none;
+}
+
+.series-card-soon
+{
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .section-label-spaced
 {
   margin-top: 48px;
