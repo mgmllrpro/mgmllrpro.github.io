@@ -29,6 +29,27 @@ title: Home
   </div>
 </section>
 
+{%- if site.data.upcoming and site.data.upcoming.size > 0 %}
+<section class="section">
+  <div class="wrapper">
+    <h2 class="section-label">Coming soon</h2>
+    <ul class="series-grid">
+{%- for item in site.data.upcoming %}
+      <li>
+        <div class="series-card is-upcoming">
+          <div class="series-card-board">{{ item.title | escape }}</div>
+          <div class="series-card-body">
+            <p>{{ item.teaser | escape }}</p>
+            <span class="series-card-soon toc-soon">Coming soon</span>
+          </div>
+        </div>
+      </li>
+{%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
+
 <section class="section">
   <div class="wrapper">
     <h2 class="section-label">Latest articles</h2>
