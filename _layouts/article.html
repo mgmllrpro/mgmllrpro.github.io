@@ -18,6 +18,10 @@ layout: default
     {%- endif -%}
   {%- endif -%}
 {%- endfor -%}
+{%- comment -%} Reading time at about 230 words per minute, shown in the TL;DR box {%- endcomment -%}
+{%- assign words = content | strip_html | number_of_words -%}
+{%- assign minutes = words | plus: 229 | divided_by: 230 -%}
+{%- capture read_meta -%}{{ minutes }} min read{%- endcapture -%}
 <article class="post">
   <header class="post-header">
     {%- if series %}
@@ -30,6 +34,8 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%-d %B %Y" }}{% if site.author %} · {{ site.author | escape }}{% endif %}</p>
     {%- endif %}
   </header>
+
+  {% include tldr.html items=page.tldr meta=read_meta %}
 
   {%- if page.image %}
   <img class="article-header-image" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">

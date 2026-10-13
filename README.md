@@ -15,12 +15,14 @@ Views are my own and do not necessarily reflect those of my employer.
 ├── index.md                      Start page: series and latest articles
 ├── about.md                      About page
 ├── _config.yml                   Site settings
-├── _data/series.yml              List of all series (title, description, visible)
+├── _data/series.yml              List of all series (title, description, visible, parts, related)
 ├── _layouts/                     Page templates for series and articles
-├── _includes/article-list.html   Automatic article list per series
+├── _includes/article-list.html   Automatic article list (series without parts)
+├── _includes/series-toc.html     Table of contents from the parts in _data/series.yml
+├── _includes/tldr.html           TL;DR box for articles and series pages
 ├── assets/                       Styles and shared images
 ├── agentic-operating-model/
-│   ├── index.md                  Series overview (fills itself)
+│   ├── index.md                  Series overview: TL;DR, how to read, contents
 │   └── 01-<article-slug>/
 │       ├── index.md              The article
 │       └── header.png            Header image, also used for LinkedIn previews
@@ -42,13 +44,23 @@ Views are my own and do not necessarily reflect those of my employer.
    part: 2
    date: 2026-11-03
    image: /agentic-operating-model/02-article-slug/header.png
+   tldr:
+     - "Three short statements the reader should take away."
+     - "One sentence each."
+     - "Shown as the TL;DR box at the top, with the reading time."
    ---
    ```
 
 3. Add `header.png` (1200 × 627 px works best for LinkedIn).
-4. Commit. The series page, the start page and the navigation update automatically.
+4. Commit. The series page, the start page and the navigation update automatically;
+   in the table of contents the part turns from "Coming soon" into a link.
 
 ## Writing tips
+
+Every article starts with a **TL;DR**: three statements in the front matter (`tldr:`). The
+layout shows them as a small chalkboard above the header image, together with the reading
+time (about 230 words per minute). Series pages have their own `tldr:` and `tldr_meta:`.
+
 
 Highlight a key idea with the light bulb box – write a quote and add the class
 directly below it:

@@ -1,0 +1,48 @@
+{%- comment -%}
+  Table of contents of a series from _data/series.yml (parts and related).
+  A part links to its article as soon as the article is published; until then it shows "Coming soon".
+  Usage: {% include series-toc.html series=series %}
+{%- endcomment -%}
+{%- assign articles = site.pages | where: "series", include.series.id | where: "layout", "article" -%}
+<ol class="series-toc">
+  {%- for p in include.series.parts %}
+  {%- assign article = nil -%}
+  {%- for a in articles -%}
+    {%- if a.part == p.part -%}{%- assign article = a -%}{%- endif -%}
+  {%- endfor %}
+  <li class="toc-item{% unless article %} is-soon{% endunless %}">
+    <span class="toc-part" aria-hidden="true">{{ p.part }}</span>
+    <div class="toc-body">
+      <h3 class="toc-title">
+        <span class="visually-hidden">Part {{ p.part }}: </span>
+        {%- if article -%}
+        <a href="{{ article.url | relative_url }}">{{ p.title | escape }}</a>
+        {%- else -%}
+        {{ p.title | escape }}
+        {%- endif -%}
+      </h3>
+      <p class="toc-teaser">{{ p.teaser | escape }}</p>
+      <p class="toc-meta">
+        {%- if p.audience %}<span class="toc-tag">For {{ p.audience | escape }}</span>{% endif -%}
+        <span>{{ p.minutes }} min read</span>
+        {%- unless article %}<span class="toc-soon">Coming soon</span>{% endunless -%}
+      </p>
+    </div>
+  </li>
+  {%- endfor %}
+</ol>
+{%- if include.series.related and include.series.related.size > 0 %}
+<h2 class="section-label section-label-spaced">Related articles</h2>
+<ul class="toc-related">
+  {%- for r in include.series.related %}
+  {%- assign article = site.pages | where: "url", r.url | first %}
+  <li>
+    <h3 class="toc-title">
+      {%- if article -%}<a href="{{ article.url | relative_url }}">{{ r.title | escape }}</a>{%- else -%}{{ r.title | escape }}{%- endif -%}
+    </h3>
+    <p class="toc-teaser">{{ r.teaser | escape }}</p>
+    {%- unless article %}<p class="toc-meta"><span class="toc-soon">Coming soon</span></p>{% endunless %}
+  </li>
+  {%- endfor %}
+</ul>
+{%- endif %}

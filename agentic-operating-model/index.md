@@ -6,10 +6,16 @@ description: >-
   An article series on how organisations move from a human-only operating model
   to one in which people, agents, automation and systems share the work. The
   examples come from financial services, where the model is tested hardest.
+tldr:
+  - Agentic transformation starts with capabilities, not with a list of agents.
+  - Work is shared between people, agents, automation and systems – by design, step by step.
+  - Agents can be equal partners in the work, never in accountability.
+  - Autonomy is set per action and earned with evidence.
+  - Knowledge is more than data – and it is what makes agents good.
+tldr_meta: Six parts · about 35 minutes in total
 ---
 
-The Agentic Operating Model describes what changes when AI agents become part of
-the workforce: how value is created, how work is organised, how knowledge is
-managed, how agents are governed, which technology carries them and how people
-and roles evolve. The articles follow the structure of the model and can be
-read in order or individually.
+Each part stands on its own. Read them in order for the full argument, or start
+where your questions are: parts 1 and 2 for strategy, part 3 for processes and
+operations, part 4 for organisation and people, part 5 for risk and compliance,
+part 6 for architecture on the Microsoft platform.
