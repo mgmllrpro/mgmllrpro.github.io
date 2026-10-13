@@ -10,18 +10,20 @@ work is shaped and what it means for the people doing it.
 
 ## How I write
 
-For years, I had these ideas in my head and on whiteboards, but rarely on
-paper. I'm a technologist, and my native language is German. In IT, though,
+My native language is German, and that is the language I think and work in:
+the model behind these articles is developed in German first. In IT, though,
 most of the conversation happens in English, so English is how ideas travel
-furthest. With AI as an editor, I can write in English: I focus on the content –
-the thinking, the structure, the arguments – and AI helps me find correct, clear
-English for it. That way my thoughts reach far more people than they would in
-German alone. For me, that is one of the most practical things AI has done so
-far.
+furthest. AI makes it possible for me to publish directly in English.
 
-The ideas, models and conclusions in these articles are my own. AI helps me put
-them into words and challenges my arguments along the way. Every article is
-reviewed and edited by me, and I take full responsibility for its content.
+It works a bit like a ghostwriter who interviews me and turns my thinking into
+text – with two differences: I say so openly, and nothing is published that I
+have not reviewed, changed where needed and approved. AI helps with the wording
+and challenges my arguments along the way; the ideas, models and conclusions are
+mine, and so is the responsibility for every statement.
+
+For me, that is one of the most practical things AI has done so far: I can
+focus on the content and still reach far more people than I would in German
+alone.
 
 ## About this site
 
