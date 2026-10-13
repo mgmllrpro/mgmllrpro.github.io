@@ -36,6 +36,15 @@ title: Home
     <ul class="series-grid">
 {%- for item in site.data.upcoming %}
       <li>
+{%- if item.url %}
+        <a class="series-card" href="{{ item.url | relative_url }}">
+          <div class="series-card-board">{{ item.title | escape }}</div>
+          <div class="series-card-body">
+            <p>{{ item.teaser | escape }}</p>
+            <span class="series-card-more">Read the preview<span class="doodle-arrow" aria-hidden="true"></span></span>
+          </div>
+        </a>
+{%- else %}
         <div class="series-card is-upcoming">
           <div class="series-card-board">{{ item.title | escape }}</div>
           <div class="series-card-body">
@@ -43,6 +52,7 @@ title: Home
             <span class="series-card-soon toc-soon">Coming soon</span>
           </div>
         </div>
+{%- endif %}
       </li>
 {%- endfor %}
     </ul>

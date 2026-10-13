@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{%- comment -%}
+  Preview of an upcoming article: title, header image, TL;DR and the opening paragraphs.
+  Not listed under "Latest articles" (that list only shows layout "article").
+  When the article is published, switch the page to layout "article" with the full text.
+  page.minutes: reading time of the full article, shown in the TL;DR box.
+{%- endcomment -%}
+{%- capture read_meta -%}Full article: {{ page.minutes }} min read{%- endcapture -%}
+<article class="post">
+  <header class="post-header">
+    <p class="article-series">Preview</p>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {%- if site.author %}
+    <p class="post-meta">{{ site.author | escape }}</p>
+    {%- endif %}
+  </header>
+
+  {% include tldr.html items=page.tldr meta=read_meta variant="light" %}
+
+  {%- if page.image %}
+  <img class="article-header-image" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+  {%- endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <aside class="preview-note">
+    <p class="preview-note-title">The full article is coming soon.</p>
+    <p>New articles are announced on LinkedIn.</p>
+  </aside>
+
+  <p class="article-disclaimer"><em>I'm a technologist, and English is not my first language. The ideas, structure and arguments are mine; AI helps me put them into words – and that is what makes it possible for me to share them at all. I take responsibility for every statement. Views are my own and do not necessarily reflect those of my employer.</em></p>
+</article>
