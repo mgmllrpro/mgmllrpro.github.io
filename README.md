@@ -73,6 +73,19 @@ directly below it:
 
 Use it at most once or twice per article so it keeps its effect.
 
+End each part of a series with the takeaway box – what the part means for the reader's
+organisation, plus a teaser for the next part. Light bulb, bold label, list, italic teaser:
+
+```markdown
+> **What this means for your organisation**
+>
+> - First statement.
+> - Second statement.
+>
+> *Next: one sentence that makes readers want the next part.*
+{: .takeaway}
+```
+
 Set background information apart with the callout box – a quote whose first line is the
 label, with the class directly below. It is used, for example, for the box
 "On Microsoft's platform" after a vendor-neutral explanation:
