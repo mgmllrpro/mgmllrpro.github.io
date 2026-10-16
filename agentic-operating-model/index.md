@@ -5,10 +5,10 @@ series: agentic-operating-model
 description: >-
   An article series on how organisations move from a human-only operating model
   to one in which people, agents, automation and systems share the work. The
-  examples come from financial services, where the model is tested hardest.
+  examples come from financial services, where the demands on such a model are highest.
 tldr:
   - Agentic transformation starts with capabilities, not with a list of agents.
-  - Work is shared between people, agents, automation and systems – by design, step by step.
+  - Work is shared between people, agents, automation and systems – by design.
   - Agents can be equal partners in the work, never in accountability.
   - Autonomy is set per action and earned with evidence.
   - Knowledge is more than data – and it is what makes agents good.
