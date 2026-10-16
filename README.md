@@ -73,6 +73,30 @@ directly below it:
 
 Use it at most once or twice per article so it keeps its effect.
 
+Set background information apart with the callout box – a quote whose first line is the
+label, with the class directly below. It is used, for example, for the box
+"On Microsoft's platform" after a vendor-neutral explanation:
+
+```markdown
+> **On Microsoft's platform**
+>
+> Two services cover much of this. …
+{: .callout}
+```
+
+For a short core statement of your own, use the chalkboard variant – it matches the TL;DR
+board and draws the most attention, so keep it to a few sentences and use it sparingly:
+
+```markdown
+> **Agent-ready knowledge**
+>
+> Knowledge is agent-ready when an agent may rely on it for a specific task: …
+{: .callout .chalk}
+```
+
+Keep vendor information such as "On Microsoft's platform" in the light box, so it stays
+background rather than the most prominent element on the page.
+
 ## Starting a new series
 
 1. Set `visible: true` for the series in `_data/series.yml` (or add a new entry).
