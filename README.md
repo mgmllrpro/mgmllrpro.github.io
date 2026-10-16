@@ -73,6 +73,17 @@ directly below it:
 
 Use it at most once or twice per article so it keeps its effect.
 
+Set background information apart with the callout box – a quote whose first line is the
+label, with the class directly below. It is used, for example, for the box
+"On Microsoft's platform" after a vendor-neutral explanation:
+
+```markdown
+> **On Microsoft's platform**
+>
+> Two services cover much of this. …
+{: .callout}
+```
+
 ## Starting a new series
 
 1. Set `visible: true` for the series in `_data/series.yml` (or add a new entry).
