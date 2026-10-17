@@ -11,7 +11,7 @@ tldr:
   - Agents can be equal partners in the work, never in accountability.
   - Autonomy is set per action and earned with evidence.
   - Knowledge is more than data – and it is what makes agents good.
-tldr_meta: Seven parts · 49 minutes in total
+tldr_meta: Seven parts · 51 minutes in total
 ---
 
 Read the parts in order for the full argument, or start with the section that matches your question. Each section begins with what you need to know from the parts before it.
