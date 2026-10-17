@@ -765,15 +765,19 @@ img
   line-height: 1.35;
 }
 
+/* Verlinkte (veröffentlichte) Teile in Akzentfarbe: zeigt, dass man dorthin navigieren kann.
+   Noch nicht veröffentlichte Teile bleiben ohne Link in Textfarbe. */
 .toc-title a
 {
-  color: var(--ink);
+  color: var(--accent);
   text-decoration: none;
 }
 
 .toc-title a:hover
 {
-  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .toc-teaser
