@@ -15,38 +15,46 @@
   visible: true
   # Table of contents on the series page. A part links to its article once the article is
   # published (same series and part); until then it shows "Coming soon". minutes: reading time.
+  # stage (optional): Why, What or How – shown as a pill before the audience.
   parts:
     - part: 1
+      stage: Why
       title: "Which Agents Should We Build? Why It's the Wrong Question"
       teaser: Why agentic transformation starts with capabilities, not with a list of agents.
       audience: executives and strategy
       minutes: 6
     - part: 2
+      stage: Why
       title: "Execution Gets Cheap: What Shifts Strategically"
       teaser: What becomes scarce when agents make execution cheap – and what stays hard to copy.
       audience: executives and strategy
       minutes: 7
     - part: 3
+      stage: What
       title: "Capabilities, Not Processes: Re-implement, Don't Just Automate"
       teaser: The difference between a process and a capability, and seven decisions for every step.
       audience: operations and process owners
       minutes: 8
     - part: 4
+      stage: What
       title: "The Model and the People: Six Building Blocks, and Agents in the Organisation"
       teaser: The six building blocks of the model, and agents integrated like employees without being employees.
       audience: organisation and HR
       minutes: 7
     - part: 5
+      stage: What
       title: "Autonomy Is Earned: Governance, Controls and Regulation as a Design Input"
       teaser: Autonomy set per action and earned with evidence, controls built into the work.
       audience: risk and compliance
       minutes: 7
     - part: 6
+      stage: How
       title: "Making It Work: The Architecture Behind the Model"
       teaser: Who steers the work, where evidence comes from, autonomy as a setting – and testing that never stops.
       audience: IT and architecture
       minutes: 7
     - part: 7
+      stage: How
       title: "Building It on Microsoft: Platform, Control Plane and the Path Ahead"
       teaser: How the model and its architecture map onto the Microsoft platform – and the path for each capability.
       audience: IT and architecture
