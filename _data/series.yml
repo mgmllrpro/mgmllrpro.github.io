@@ -75,7 +75,7 @@
       title: "Making It Work: The Architecture Behind the Model"
       teaser: Who steers the work, where evidence comes from, autonomy as a setting – and testing that never stops.
       audience: IT and architecture
-      minutes: 8
+      minutes: 9
     - part: 7
       title: "Building It on Microsoft: Platform, Control Plane and the Path Ahead"
       teaser: How the model and its architecture map onto the Microsoft platform – and the path for each capability.
