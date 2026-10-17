@@ -23,6 +23,7 @@
       </h3>
       <p class="toc-teaser">{{ p.teaser | escape }}</p>
       <p class="toc-meta">
+        {%- if p.stage %}<span class="toc-stage">{{ p.stage | escape }}</span>{% endif -%}
         {%- if p.audience %}<span class="toc-tag">For {{ p.audience | escape }}</span>{% endif -%}
         <span>{{ p.minutes }} min read</span>
         {%- unless article %}<span class="toc-soon">Coming soon</span>{% endunless -%}
