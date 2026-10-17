@@ -80,7 +80,7 @@
       title: "Building It on Microsoft: Platform, Control Plane and the Path Ahead"
       teaser: How the model and its architecture map onto the Microsoft platform – and the path for each capability.
       audience: IT and architecture
-      minutes: 8
+      minutes: 9
   # Standalone articles the series refers to; url is where they will be published.
   related:
     - title: Building agent-ready knowledge
