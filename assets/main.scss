@@ -807,6 +807,50 @@ img
   font-weight: 600;
 }
 
+/* Sections in a series table of contents (e.g. Why · What · How) */
+.toc-section
+{
+  margin-top: 40px;
+}
+
+.toc-section:first-of-type
+{
+  margin-top: 12px;
+}
+
+.toc-section-title
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.toc-section-intro
+{
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.toc-section-intro p
+{
+  margin: 0 0 8px;
+}
+
+.toc-section-intro ul
+{
+  margin: 0 0 10px;
+  padding-left: 1.2em;
+}
+
+.toc-section-intro li
+{
+  margin-bottom: 4px;
+}
+
 .toc-stage
 {
   padding: 2px 10px;

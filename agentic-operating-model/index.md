@@ -14,7 +14,4 @@ tldr:
 tldr_meta: Seven parts · 49 minutes in total
 ---
 
-Each part stands on its own. Read them in order for the full argument, or start
-where your questions are: parts 1 and 2 for strategy, part 3 for processes and
-operations, part 4 for organisation and people, part 5 for risk and compliance,
-part 6 for the architecture behind the model, part 7 for the Microsoft platform.
+Read the parts in order for the full argument, or start with the section that matches your question. Each section begins with what you need to know from the parts before it.
