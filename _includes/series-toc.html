@@ -1,36 +1,29 @@
 {%- comment -%}
-  Table of contents of a series from _data/series.yml (parts and related).
+  Table of contents of a series from _data/series.yml (parts, optional sections, related).
   A part links to its article as soon as the article is published; until then it shows "Coming soon".
   Usage: {% include series-toc.html series=series %}
 {%- endcomment -%}
 {%- assign articles = site.pages | where: "series", include.series.id | where: "layout", "article" -%}
+{%- if include.series.sections -%}
+{%- comment -%} Sections (e.g. Why · What · How): each with a short entry text, then its parts. {%- endcomment -%}
+{%- for sec in include.series.sections %}
+<section class="toc-section">
+  <h3 class="toc-section-title"><span class="toc-stage">{{ sec.stage | escape }}</span> {{ sec.title | escape }}</h3>
+  <div class="toc-section-intro">{{ sec.intro | markdownify }}</div>
+  {%- assign sparts = "" | split: "" -%}
+  {%- for p in include.series.parts -%}
+    {%- if sec.parts contains p.part -%}{%- assign sparts = sparts | push: p -%}{%- endif -%}
+  {%- endfor %}
+  <ol class="series-toc">
+  {%- include series-toc-items.html parts=sparts articles=articles level=4 %}
+  </ol>
+</section>
+{%- endfor %}
+{%- else %}
 <ol class="series-toc">
-  {%- for p in include.series.parts %}
-  {%- assign article = nil -%}
-  {%- for a in articles -%}
-    {%- if a.part == p.part -%}{%- assign article = a -%}{%- endif -%}
-  {%- endfor %}
-  <li class="toc-item{% unless article %} is-soon{% endunless %}">
-    <span class="toc-part" aria-hidden="true">{{ p.part }}</span>
-    <div class="toc-body">
-      <h3 class="toc-title">
-        <span class="visually-hidden">Part {{ p.part }}: </span>
-        {%- if article -%}
-        <a href="{{ article.url | relative_url }}">{{ p.title | escape }}</a>
-        {%- else -%}
-        {{ p.title | escape }}
-        {%- endif -%}
-      </h3>
-      <p class="toc-teaser">{{ p.teaser | escape }}</p>
-      <p class="toc-meta">
-        {%- if p.audience %}<span class="toc-tag">For {{ p.audience | escape }}</span>{% endif -%}
-        <span>{{ p.minutes }} min read</span>
-        {%- unless article %}<span class="toc-soon">Coming soon</span>{% endunless -%}
-      </p>
-    </div>
-  </li>
-  {%- endfor %}
+  {%- include series-toc-items.html parts=include.series.parts articles=articles %}
 </ol>
+{%- endif -%}
 {%- if include.series.related and include.series.related.size > 0 %}
 <h2 class="section-label section-label-spaced">Related articles</h2>
 <ul class="toc-related">

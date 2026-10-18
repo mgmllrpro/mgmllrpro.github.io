@@ -1,0 +1,31 @@
+{%- comment -%}
+  Items of a series table of contents. Parameters: parts (list from _data/series.yml), articles (published pages
+  of the series), level (heading level of the part titles, default 3).
+{%- endcomment -%}
+{%- assign articles = include.articles -%}
+  {%- for p in include.parts %}
+  {%- assign article = nil -%}
+  {%- for a in articles -%}
+    {%- if a.part == p.part -%}{%- assign article = a -%}{%- endif -%}
+  {%- endfor %}
+  <li class="toc-item{% unless article %} is-soon{% endunless %}">
+    <span class="toc-part" aria-hidden="true">{{ p.part }}</span>
+    <div class="toc-body">
+      <h{{ include.level | default: 3 }} class="toc-title">
+        <span class="visually-hidden">Part {{ p.part }}: </span>
+        {%- if article -%}
+        <a href="{{ article.url | relative_url }}">{{ p.title | escape }}</a>
+        {%- else -%}
+        {{ p.title | escape }}
+        {%- endif -%}
+      </h{{ include.level | default: 3 }}>
+      <p class="toc-teaser">{{ p.teaser | escape }}</p>
+      <p class="toc-meta">
+        {%- if p.stage %}<span class="toc-stage">{{ p.stage | escape }}</span>{% endif -%}
+        {%- if p.audience %}<span class="toc-tag">For {{ p.audience | escape }}</span>{% endif -%}
+        <span>{{ p.minutes }} min read</span>
+        {%- unless article %}<span class="toc-soon">Coming soon</span>{% endunless -%}
+      </p>
+    </div>
+  </li>
+  {%- endfor %}
